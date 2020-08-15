@@ -1,0 +1,67 @@
+:root {
+  --black: #262631;
+  --orange: #e87613;
+
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.accent {
+  color: var(--orange);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  -webkit-font-smoothing: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  animation: x 3s;
+  animation-name: fade;
+
+  color: var(--black);
+}
+
+h1 {
+  font-family: "Dancing Script";
+  font-size: 5rem;
+  text-shadow: 1px 1px 2px var(--shadow);
+}
+
+h2 {
+  font-family: "Fira Code Medium";
+}
+
+a {
+  font-family: "Fira Code", monospace;
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--black);
+  padding-bottom: 5px;
+  background: url("assets/underline.png") bottom no-repeat;
+}
+
+a:hover {
+  color: var(--orange);
+  background: url("assets/underline-black.png") bottom no-repeat;
+}
+
+#title {
+  margin: 1rem;
+}
