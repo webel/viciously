@@ -65,3 +65,20 @@ a:hover {
 #title {
   margin: 1rem;
 }
+
+@media (max-width: 600px) {
+  img {
+    height: 50%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+
+    padding: 0.2rem;
+  }
+}
