@@ -37,6 +37,11 @@ body {
 
   color: var(--black);
 }
+h3, p, a {
+  font-family: "Fira Code", monospace;
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+}
 
 h1 {
   font-family: "Dancing Script";
@@ -49,7 +54,6 @@ h2 {
 }
 
 a {
-  font-family: "Fira Code", monospace;
   font-weight: bolder;
   text-decoration: none;
   color: var(--black);
@@ -78,7 +82,9 @@ a:hover {
   h2 {
     font-size: 1rem;
     text-align: center;
+  }
 
-    padding: 0.2rem;
+  h3 {
+    font-size: 0.9rem;
   }
 }
