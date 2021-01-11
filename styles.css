@@ -18,34 +18,47 @@
   }
 }
 
-html,
-body {
+html, body {
   width: 100%;
   height: 100%;
-
   margin: 0;
   -webkit-font-smoothing: auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-
   animation: x 3s;
   animation-name: fade;
 
   color: var(--black);
 }
+
+body {
+  overflow-x: scroll;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  margin: 4rem;
+  border: 1px solid var(--orange);
+  border-radius: 5px
+}
+
 h3, p, a {
   font-family: "Fira Code", monospace;
   padding-left: 0.5rem;
   padding-right: 0.2rem;
+  text-align: center;
 }
 
 h1 {
   font-family: "Dancing Script";
-  font-size: 5rem;
+  font-size: 4rem;
   text-shadow: 1px 1px 2px var(--shadow);
 }
 
@@ -75,13 +88,8 @@ a:hover {
     height: 50%;
   }
 
-  h1 {
-    font-size: 4rem;
-  }
-
   h2 {
     font-size: 1rem;
-    text-align: center;
   }
 
   h3 {
